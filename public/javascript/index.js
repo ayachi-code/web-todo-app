@@ -11,4 +11,8 @@ let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     //De waarden van de input word opgeslagen in variablen input text
     let waarden = input_van_text = document.getElementById("typen").value;
 
+    let div_binnen_todos = document.createElement("div");
+
+
+
 })
