@@ -28,6 +28,10 @@ let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     button_in_de_div.appendChild(button_in_de_div_text);
     //Stijl voor knop
     button_in_de_div.style = "float: right;margin-top:-30px";
+    //Eventlistener als verwijder word geklikt
+    button_in_de_div.addEventListener('click',() => {
+        console.log("s")
+    })
     //De p word binnen de div toegevoegt
     div_binnen_todos.appendChild(p_binnen_div);
     //Button word in de div gezet
