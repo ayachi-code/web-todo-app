@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ayachi-code/web-todo-app/issues"
   },
-  "homepage": "https://github.com/ayachi-code/web-todo-app#readme"
+  "homepage": "https://github.com/ayachi-code/web-todo-app#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
