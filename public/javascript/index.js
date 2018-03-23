@@ -68,6 +68,8 @@ function opslaan() {
 }
 
 function laden() {
+    //De waarden van de input in laden
+    let waarden = input_van_text = document.getElementById("typen").value;
     //Pakt de item van localstorage
     let data_array_locaal = localStorage.getItem('dingen');
     //Maakt het een JSON formaat
