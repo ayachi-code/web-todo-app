@@ -1,6 +1,9 @@
 //Globalen variablen
 let input_van_text;
 
+//De onzichtbare div
+let onzichtbare_div_waar_de_todos_komen = document.getElementById("todos");
+
 
 
 //Als knop + word geklikt
