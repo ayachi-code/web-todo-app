@@ -4,6 +4,10 @@ let input_van_text;
 //De onzichtbare div
 let onzichtbare_div_waar_de_todos_komen = document.getElementById("todos");
 
+//Array met de todos
+let todos_alle = [];
+
+
 
 
 //Als knop + word geklikt
@@ -30,7 +34,7 @@ let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     button_in_de_div.style = "float: right;margin-top:-30px";
     //Eventlistener als verwijder word geklikt
     button_in_de_div.addEventListener('click',() => {
-        console.log("s")
+        console.log("Test")
     })
     //De p word binnen de div toegevoegt
     div_binnen_todos.appendChild(p_binnen_div);
