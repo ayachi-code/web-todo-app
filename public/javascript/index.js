@@ -26,10 +26,10 @@ let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     let button_in_de_div_text = document.createTextNode("Verwijder");
     //Text aan button
     button_in_de_div.appendChild(button_in_de_div_text);
-    //Button word in de div gezet
-    div_binnen_todos.appendChild(button_in_de_div);
     //De p word binnen de div toegevoegt
     div_binnen_todos.appendChild(p_binnen_div);
+    //Button word in de div gezet
+    div_binnen_todos.appendChild(button_in_de_div);
     //De div word toegevoegt aan de opper div ('todos')
     onzichtbare_div_waar_de_todos_komen.appendChild(div_binnen_todos);
 
