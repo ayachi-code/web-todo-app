@@ -24,4 +24,5 @@ body {
 #typen {
     width: 100%;
     text-align: center;
+    border-radius: 50px;
 }
