@@ -10,7 +10,6 @@ let onzichtbare_div_waar_de_todos_komen = document.getElementById("todos");
 let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     //De waarden van de input word opgeslagen in variablen input text
     let waarden = input_van_text = document.getElementById("typen").value;
-
     //Div word gemaakt dat binnen de todos komt elke keer komt
     let div_binnen_todos = document.createElement("div");
     //De P die binnen div binnen todos komt
@@ -21,6 +20,8 @@ let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     p_binnen_div.appendChild(p_binnen_div_text);
     //De p word binnen de div toegevoegt
     div_binnen_todos.appendChild(p_binnen_div);
+    //De div word toegevoegt aan de opper div ('todos')
+    onzichtbare_div_waar_de_todos_komen.appendChild(div_binnen_todos);
 
 
 
