@@ -16,4 +16,5 @@ body {
     background-color: royalblue;
     border-radius: 50px;
     position: fixed;
+    bottom: 0;
 }
