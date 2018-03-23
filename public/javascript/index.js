@@ -12,6 +12,8 @@ let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     let waarden = input_van_text = document.getElementById("typen").value;
     //Div word gemaakt dat binnen de todos komt elke keer komt
     let div_binnen_todos = document.createElement("div");
+    //Stijl van de div die we maken
+    div_binnen_todos.style = "background-color: palegreen";
     //De P die binnen div binnen todos komt
     let p_binnen_div = document.createElement("p");
     //De text van de p tag is gelijk aan waarden
