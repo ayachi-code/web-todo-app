@@ -35,7 +35,10 @@ let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     button_in_de_div.style = "float: right;margin-top:-30px";
     //Eventlistener als verwijder word geklikt
     button_in_de_div.addEventListener('click',() => {
-        console.log("Test")
+        console.log("Item word verwijderd");
+        //Verwijderd huidigen ellement van array
+        todos_alle.splice(todos_alle.indexOf(),1);
+        console.log(todos_alle)
     })
     //De p word binnen de div toegevoegt
     div_binnen_todos.appendChild(p_binnen_div);
