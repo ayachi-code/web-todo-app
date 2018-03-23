@@ -17,6 +17,8 @@ let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     let p_binnen_div = document.createElement("p");
     //De text van de p tag is gelijk aan waarden
     let p_binnen_div_text = document.createTextNode(waarden); 
+    //De text word binnen de p toegevoegt
+    p_binnen_div.appendChild(p_binnen_div_text);
 
 
 
