@@ -38,8 +38,10 @@ let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
         console.log("Item word verwijderd");
         //Verwijderd huidigen ellement van array
         todos_alle.splice(todos_alle.indexOf(),1);
-        //Verijderd de element
-        onzichtbare_div_waar_de_todos_komen.removeChild(div_binnen_todos);
+        //Verijderd de element in een effect van beneden naar boven
+        $(div_binnen_todos).animate({
+            height: 'toggle'
+        });
     })
     //De p word binnen de div toegevoegt
     div_binnen_todos.appendChild(p_binnen_div);
