@@ -22,6 +22,8 @@ let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     p_binnen_div.appendChild(p_binnen_div_text);
     //Button word gemaakt in de div
     let button_in_de_div = document.createElement("button");
+    //Text voor de knop gemaakt
+    let button_in_de_div_text = document.createTextNode("Verwijder")
     //De p word binnen de div toegevoegt
     div_binnen_todos.appendChild(p_binnen_div);
     //De div word toegevoegt aan de opper div ('todos')
