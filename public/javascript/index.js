@@ -15,6 +15,8 @@ let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     let waarden = input_van_text = document.getElementById("typen").value;
     //Push naar array
     todos_alle.push(waarden);
+    opslaan();
+    laden();
     //Div word gemaakt dat binnen de todos komt elke keer komt
     let div_binnen_todos = document.createElement("div");
     //Stijl van de div die we maken
@@ -56,4 +58,11 @@ let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
 function opslaan() {
      //Opslaan in localstorage maakt de array een string en slaat het dan op in localstorage
      localStorage.setItem("dingen",JSON.stringify(todos_alle));
+}
+
+function laden() {
+    //Loopt door alle ellementen in array todos_alle
+    for (var i = 0; i < todos_alle.length; i++) {
+        console.log(todos_alle[i])
+    }
 }
