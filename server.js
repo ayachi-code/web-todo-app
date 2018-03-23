@@ -4,3 +4,5 @@ const express = require("express");
 const app = express();
 //Server is gelijk aan port 3000 die word gehost
 const server = app.listen(3000);
+//public map word gehost...
+app.use(express.static("public"))
