@@ -18,7 +18,9 @@ let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     } else {
     //Push naar array
     todos_alle.push(waarden);
+    //Slaat het op....
     opslaan();
+    console.log(todos_alle);
     //Div word gemaakt dat binnen de todos komt elke keer komt
     let div_binnen_todos = document.createElement("div");
     //Stijl van de div die we maken
@@ -41,7 +43,9 @@ let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     button_in_de_div.addEventListener('click',() => {
         console.log("Item word verwijderd");
         //Verwijderd huidigen ellement van array
-        todos_alle.splice(todos_alle.indexOf(),1);
+        todos_alle.splice(todos_alle.indexOf(waarden),1);
+        //Slaat het op
+        opslaan();
         //Verijderd de element in een effect van beneden naar boven
         $(div_binnen_todos).animate({
             height: 'toggle'
