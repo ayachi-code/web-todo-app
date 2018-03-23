@@ -66,3 +66,8 @@ function laden() {
     let data_array_locaal_json = JSON.parse(data_array_locaal);
     
 }
+
+//Als pagina geladen is voer de functie laden uit
+window.onload = () => {
+    laden();
+}
