@@ -13,6 +13,9 @@ let todos_alle = [];
 let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     //De waarden van de input word opgeslagen in variablen input text
     let waarden = input_van_text = document.getElementById("typen").value;
+    if (waarden == "") {
+        alert("De input is leeg...")
+    } else {
     //Push naar array
     todos_alle.push(waarden);
     opslaan();
@@ -50,6 +53,7 @@ let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     div_binnen_todos.appendChild(button_in_de_div);
     //De div word toegevoegt aan de opper div ('todos')
     onzichtbare_div_waar_de_todos_komen.appendChild(div_binnen_todos);
+}
 
 
 })
