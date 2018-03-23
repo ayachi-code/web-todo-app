@@ -20,6 +20,8 @@ let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     let p_binnen_div_text = document.createTextNode(waarden); 
     //De text word binnen de p toegevoegt
     p_binnen_div.appendChild(p_binnen_div_text);
+    //Button word gemaakt in de div
+    let button_in_de_div = document.createElement("button");
     //De p word binnen de div toegevoegt
     div_binnen_todos.appendChild(p_binnen_div);
     //De div word toegevoegt aan de opper div ('todos')
