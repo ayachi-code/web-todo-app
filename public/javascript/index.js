@@ -9,11 +9,12 @@ let todos_alle = [];
 
 
 
-
 //Als knop + word geklikt
 let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     //De waarden van de input word opgeslagen in variablen input text
     let waarden = input_van_text = document.getElementById("typen").value;
+    //Push naar array
+    todos_alle.push(waarden)
     //Div word gemaakt dat binnen de todos komt elke keer komt
     let div_binnen_todos = document.createElement("div");
     //Stijl van de div die we maken
