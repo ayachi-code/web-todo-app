@@ -66,7 +66,40 @@ function laden() {
     let data_array_locaal_json = JSON.parse(data_array_locaal);
     //Loopt door alle ellementen een voor een in data_array locaal json
     for(var i = 0;i < data_array_locaal_json.length; i++) {
-        console.log(data_array_locaal_json[i])
+        let div_binnen_todos = document.createElement("div");
+        //Stijl van de div die we maken
+        div_binnen_todos.style = "background-color: palegreen;text-align: center;height: 40px;border-style: dotted;border-width: 2px";
+        //De P die binnen div binnen todos komt
+        let p_binnen_div = document.createElement("p");
+        //De text van de p tag is gelijk aan de data_array_locaal_json array
+        let p_binnen_div_text = document.createTextNode(data_array_locaal_json[i]); 
+        //De text word binnen de p toegevoegt
+        p_binnen_div.appendChild(p_binnen_div_text);
+        //Button word gemaakt in de div
+        let button_in_de_div = document.createElement("button");
+        //Text voor de knop gemaakt
+        let button_in_de_div_text = document.createTextNode("Verwijder");
+        //Text aan button
+        button_in_de_div.appendChild(button_in_de_div_text);
+        //Stijl voor knop
+        button_in_de_div.style = "float: right;margin-top:-30px";
+        //Eventlistener als verwijder word geklikt
+        button_in_de_div.addEventListener('click',() => {
+            console.log("Item word verwijderd");
+            //Verwijderd huidigen ellement van array
+            todos_alle.splice(todos_alle.indexOf(),1);
+            //Verijderd de element in een effect van beneden naar boven
+            $(div_binnen_todos).animate({
+                height: 'toggle'
+            });
+        })
+        //De p word binnen de div toegevoegt
+        div_binnen_todos.appendChild(p_binnen_div);
+        //Button word in de div gezet
+        div_binnen_todos.appendChild(button_in_de_div);
+        //De div word toegevoegt aan de opper div ('todos')
+        onzichtbare_div_waar_de_todos_komen.appendChild(div_binnen_todos);
+    
     }
     
 }
