@@ -97,7 +97,8 @@ function laden() {
         button_in_de_div.addEventListener('click',() => {
             console.log("Item word verwijderd");
             //Verwijderd huidigen ellement van array
-            todos_alle.splice(todos_alle.indexOf(waarden),1);
+            let x = data_array_locaal_json.splice(data_array_locaal_json.indexOf(data_array_locaal_json[i]),1);
+            opslaan();
             //Verijderd de element in een effect van beneden naar boven
             $(div_binnen_todos).animate({
                 height: 'toggle'
