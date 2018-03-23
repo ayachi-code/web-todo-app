@@ -64,6 +64,10 @@ function laden() {
     let data_array_locaal = localStorage.getItem('dingen');
     //Maakt het een JSON formaat
     let data_array_locaal_json = JSON.parse(data_array_locaal);
+    //Loopt door alle ellementen een voor een in data_array locaal json
+    for(var i = 0;i < data_array_locaal_json.length; i++) {
+        console.log(data_array_locaal_json[i])
+    }
     
 }
 
