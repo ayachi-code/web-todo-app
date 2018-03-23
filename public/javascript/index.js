@@ -15,6 +15,8 @@ let voeg = document.getElementById("voeg_toe").addEventListener('click',() => {
     let div_binnen_todos = document.createElement("div");
     //De P die binnen div binnen todos komt
     let p_binnen_div = document.createElement("p");
+    //De text van de p tag is gelijk aan waarden
+    let p_binnen_div_text = document.createTextNode(waarden); 
 
 
 
